@@ -118,7 +118,7 @@ p {
     gap: 15px; /* リンク間のスペースを調整 */
 } */
 
-ul li {
+.related link ul li {
     list-style-type: none; /* デフォルトのリストマーカーを削除 */
     padding: 0;
     display: flex; /* 横並びに表示 */
