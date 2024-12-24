@@ -122,6 +122,15 @@ ul li {
     display: inline-block;
 }
 
+#images figure {
+    margin: 20px 0;
+    text-align: center; /* キャプションを中央揃え */
+}
+
+#images img {
+    border: 1px solid #ddd; /* 画像に枠線を追加 */
+}
+
 /* フッター設定 */
 footer {
     text-align: center;
