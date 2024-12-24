@@ -15,7 +15,6 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#career">Profile</a></li>
-                <li><a href="#links">外部リンク</a></li>
                 <li><a href="#certifications">Skill</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publication</a></li>
@@ -28,36 +27,55 @@
             <div class="career-content">
                 <div class="career-text">
                     <p>2023年　立命館大学情報理工学部　卒業</p>
+                    <ul>
+                        <li><a href="https://github.com/k-suna" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/kaito-sunada/" target="_blank">LinkedIn</a></li>
+                    </ul>
                 </div>
                 <div class="career-image">
                     <img src="sunada.png" alt="経歴の画像" />
                 </div>
             </div>
         </section>
-        <section id="links">
-            <h2>外部リンク</h2>
-            <ul>
-                <li><a href="https://github.com/username" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a></li>
-            </ul>
-        </section>
         <section id="certifications">
             <h2>Skill</h2>
             <ul>
                 <li>基本情報技術者試験</li>
-                <li>TOEIC 900点</li>
-                <li>Pythonエンジニア認定試験</li>
+                <li>TOEIC 650点</li>
+                <li>簿記3級</li>
+                <li>FP3級</li>
+                <li>世界遺産検定2級</li>
             </ul>
         </section>
         <section id="research">
             <h2>Research</h2>
-            <p>私の研究分野は、人工知能、機械学習、およびデータ解析です。</p>
+            <h3>無機材料分析手法の選択支援のためのオントロジーの構築とシステムの開発</h3>
+            <p>無機材料の製造において，物質の材質や内部構造の調査のために材料の分析が重要であり，
+                分析目的に応じた最適な分析手法を選択する必要がある．
+                例えば，材料内の空洞(ボイド)の有無の調査が依頼目的であれば，「X線CT法」という分析手法を選ぶ必要がある．
+                しかし，分析手法は共同研究先企業で用いているものだけでも約100種類あり，
+                現状では特に経験の浅い技術者が数ある分析手法の中から最適な分析手法を選択することは，
+                無機材料やX線・電子線といった使用媒体などの特性や依頼された調査目的，
+                その分析手法によって明らかにできる性質などに基づいて総合的に判断する必要があるため，困難な場合がある．
+                そこで，分析依頼書を与えてテキスト解析し手法を推薦するシステムが提案された．
+                しかしながら，語彙の定義や抽象度が不明瞭であることから，プログラムが複雑になり，
+                メンテナンス性が低下する課題があった．
+                そこで共同研究全体の最終的な目標として，分析依頼書の内容から最適な手法を推薦するシステムの開発を目指し，
+                本研究ではそのための分析目的と分析手法に関するオントロジーを構築する．
+                具体的には，分析依頼書に記載された分析目的を部分行為に分解し，
+                その部分行為を達成する分析手法を出力するよう概念を定義する．
+                加えて，その分析手法が用いる分析装置が適切かどうかを判断するために分析条件と結び付けて概念を定義する．
+                これにより，分析目的が与えられたとき分析手法と分析装置の条件を結び付けて，最適な分析手法を推薦することを目指す．
+                また，構築したオントロジーを組み込んだ推薦システムを開発し，実証する．
+                評価の結果，過去の分析依頼に対して概ね適切に処理できたことから，
+                オントロジーの妥当性・オントロジーのシステムへの実装が適切だったことが分かった．</p>
         </section>
         <section id="publications">
             <h2>Publication</h2>
             <ul>
-                <li>「AIを活用した最適化手法」 - 2022年</li>
-                <li>「データ分析における新しい視点」 - 2023年</li>
+                <li><a href="swo-sunada.pdf">砂田 界渡，來村徳信，板倉 修一, 笹本 亮一, 細井 慎：
+                    機材料分析手法の選択支援のためのオントロジーの構築とシステムの提案，
+                    人工知能学会第二種研究会資料　セマンティックウェブとオントロジー研究会　SIG-SWO-064-03 (2024)</a></li>
             </ul>
         </section>
     </main>
