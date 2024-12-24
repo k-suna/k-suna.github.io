@@ -75,6 +75,33 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* 経歴セクション */
+#career {
+    display: flex;
+    justify-content: space-between; /* 左右に分ける */
+    align-items: center;
+    gap: 20px;
+}
+
+.career-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.career-text {
+    flex: 1; /* テキストエリアに広さを与える */
+    max-width: 60%; /* 最大幅を60%に設定 */
+}
+
+.career-image img {
+    max-width: 40%; /* 画像の最大幅を40%に設定 */
+    height: auto;
+    border-radius: 8px; /* 画像を丸くする場合 */
+}
+
+
 /* フッター設定 */
 footer {
     text-align: center;
