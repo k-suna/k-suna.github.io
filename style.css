@@ -95,7 +95,7 @@ h2 {
 }
 
 .career-image img {
-    max-width: 40%; /* 画像の最大幅を40%に設定 */
+    width: 150px;
     height: auto;
     border-radius: 8px; /* 画像を丸くする場合 */
 }
