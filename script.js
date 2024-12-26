@@ -13,4 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".hamburger-menu");
+        const navList = document.querySelector(".navbar ul");
+
+        menuButton.addEventListener("click", function () {
+            navList.classList.toggle("open"); // 開閉の切り替え
+        });
+    });
 });
