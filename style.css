@@ -59,8 +59,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
-/*     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    box-shadow: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     flex: 1; /* ページ全体を埋めるために伸縮可能に */
 }
