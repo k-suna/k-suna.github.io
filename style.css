@@ -147,3 +147,41 @@ body::after {
     display: block;
     height: 50px; /* ページ最後の余白を確保 */
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* ヘッダーを縦並びにする */
+        text-align: center;     /* テキストを中央揃えにする */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* ナビゲーションを縦並びにする */
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px; /* スマホでの余白を小さくする */
+        box-shadow: none; /* 影を削除してシンプルに */
+    }
+
+    .career-content {
+        flex-direction: column; /* 経歴セクションを縦並びに */
+    }
+
+    .career-text {
+        max-width: 100%; /* テキストエリアを画面全幅に */
+    }
+
+    .career-image img {
+        width: 150px; /* 画像の幅を調整 */
+    }
+
+    .related ul {
+        flex-wrap: wrap; /* リンクを折り返す */
+    }
+
+    footer {
+        font-size: 14px; /* フッターテキストを小さくする */
+    }
+}
+
