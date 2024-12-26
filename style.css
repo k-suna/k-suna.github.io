@@ -80,8 +80,7 @@ p {
 }
 
 /* 経歴セクション */
-#career {
-    position: relative;
+.career-content {
     display: flex; /* 子要素を横並びに配置 */
     justify-content: space-between; /* 子要素間のスペースを均等に配置 */
     align-items: center; /* 子要素を縦方向の中央に揃える */
