@@ -35,15 +35,15 @@ header .name {
     width: auto;
 }
 
-/* .navbar ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 15px;
-} */
+}
 
-/* ハンバーガーメニューのスタイル */
+/* /* ハンバーガーメニューのスタイル */
 .hamburger-menu {
     display: none; /* デフォルトは非表示 */
     font-size: 24px;
@@ -59,7 +59,7 @@ header .name {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 .navbar a {
     color: #fff;
@@ -113,7 +113,7 @@ p {
 
 .career-text {
     flex: 1; /* テキストエリアに広さを与える */
-    max-width: 50%; /* 最大幅を50%に設定 */
+    max-width: 40%; /* 最大幅を50%に設定 */
 }
 
 .career-image img {
