@@ -73,7 +73,7 @@ header .name {
 
 /* メインセクション */
 main {
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
     margin: 0 auto;
     background-color: #fff;
@@ -115,6 +115,12 @@ p {
 .career-text {
     flex: 1; /* テキストエリアに広さを与える */
     max-width: 50%; /* 最大幅を50%に設定 */
+}
+
+.career-image {
+    flex: 1; /* 画像エリアも伸縮可能に */
+    max-width: 50%; /* 右側を全体の50%に制限 */
+    text-align: right; /* 画像を右揃え */
 }
 
 .career-image img {
