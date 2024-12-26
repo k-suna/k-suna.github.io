@@ -155,7 +155,7 @@ body::after {
     }
 
     .navbar ul {
-        flex-direction: column; /* ナビゲーションを縦並びにする */
+/*         flex-direction: column; /* ナビゲーションを縦並びにする */ */
         gap: 10px;
     }
 
