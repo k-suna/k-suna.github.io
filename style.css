@@ -115,6 +115,7 @@ p {
 .career-image {
     flex: 1; /* 画像エリアの幅を可変に */
     max-width: 50%; /* 画像エリアの最大幅を全体の50%に設定 */
+    text-align: center; /* 画像を中央揃えに */
 }
 
 .career-image img {
