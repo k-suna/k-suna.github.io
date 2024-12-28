@@ -177,18 +177,6 @@ body::after {
         box-shadow: none; /* 影を削除してシンプルに */
     }
 
-    .career-content {
-        flex-direction: column; /* 経歴セクションを縦並びに */
-    }
-
-    .career-text {
-        max-width: 100%; /* テキストエリアを画面全幅に */
-    }
-
-    .career-image img {
-        width: 150px; /* 画像の幅を調整 */
-    }
-
     .related ul {
         flex-wrap: wrap; /* リンクを折り返す */
     }
