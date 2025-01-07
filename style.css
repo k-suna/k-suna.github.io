@@ -130,12 +130,12 @@ p {
     display: flex; /* 横並びに表示 */
 } 
 
-#images figure {
+.images figure {
     margin: 20px 0;
     text-align: center; /* キャプションを中央揃え */
 }
 
-#images img {
+.images img {
     border: 1px solid #ddd; /* 画像に枠線を追加 */
 }
 
