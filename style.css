@@ -125,19 +125,25 @@ p {
     border-radius: 8px; /* 画像の角を丸くする */
 }
 
-.image{
-/*     display: inline-block; */
-    display: flex; /* 横並びに表示 */
-} 
+.research-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列のグリッド */
+    gap: 20px; /* アイテム間の間隔 */
+    justify-items: center; /* 中央揃え */
+    align-items: center; /* 垂直方向も中央揃え */
+}
 
-.images figure {
-    margin: 20px 0;
+.research-images figure {
     text-align: center; /* キャプションを中央揃え */
 }
 
-.images img {
+.research-images img {
+    max-width: 90%; /* 画像の最大幅を調整 */
+    height: auto; /* アスペクト比を維持 */
     border: 1px solid #ddd; /* 画像に枠線を追加 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加（オプション） */
 }
+
 
 /* フッター設定 */
 footer {
