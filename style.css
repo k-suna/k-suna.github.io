@@ -128,7 +128,7 @@ p {
 .research-images {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2列のグリッド */
-    gap: 10px; /* アイテム間の間隔 */
+    gap: 5px; /* アイテム間の間隔 */
     justify-items: center; /* 中央揃え */
     align-items: center; /* 垂直方向も中央揃え */
 }
@@ -138,7 +138,7 @@ p {
 }
 
 .research-images img {
-    max-width: 100%; /* 画像の最大幅を調整 */ 
+    max-width: 110%; /* 画像の最大幅を調整 */ 
     height: auto; /* アスペクト比を維持 */
     border: 1px solid #ddd; /* 画像に枠線を追加 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加（オプション） */
