@@ -125,9 +125,14 @@ p {
     border-radius: 8px; /* 画像の角を丸くする */
 }
 
+.image{
+    display: inline-block;
+} 
+
 #images figure {
     margin: 20px 0;
     text-align: center; /* キャプションを中央揃え */
+    display: flex; /* 横並びに表示 */
 }
 
 #images img {
