@@ -142,8 +142,13 @@ p {
     height: auto;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease-in-out, opacity 0.3s;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
     cursor: pointer;
+}
+
+/* ホバー時に少し拡大 */
+.research-images img:hover {
+    transform: scale(1.1);
 }
 
 .fullscreen {
@@ -158,7 +163,6 @@ p {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    z-index: 1000;
     transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
 }
 
@@ -169,12 +173,11 @@ p {
     box-shadow: none;
 }
 
+/* クリック時に拡大 */
 .fullscreen.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    pointer-events: auto;
 }
-
 
 /* フッター設定 */
 footer {
