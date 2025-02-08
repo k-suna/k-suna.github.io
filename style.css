@@ -181,7 +181,7 @@ p {
 }
 
 /* ポップアップ用の背景スタイル */
-.overlay {
+#overlay {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -195,7 +195,7 @@ p {
 }
 
 /* ポップアップ画像のスタイル */
-.popup-image {
+#popup-image {
   max-width: 90%;
   max-height: 90%;
   margin: auto;
@@ -203,7 +203,7 @@ p {
 }
 
 /* 閉じるボタン */
-.close-btn {
+#close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -215,6 +215,9 @@ p {
   z-index: 2000;
 }
 
+#close-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
 
 /* フッター設定 */
 footer {
