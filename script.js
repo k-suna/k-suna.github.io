@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("DOMContentLoaded", () => {
         const images = document.querySelectorAll(".research-images img");
-        const fullscreenView = document.getElementByClassName("fullscreen");
+        const fullscreenView = document.querySelectorAll(".fullscreen");
         const fullscreenImg = document.querySelectorAll(".fullscreen img");
     
         images.forEach(img => {
