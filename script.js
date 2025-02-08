@@ -25,19 +25,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("DOMContentLoaded", () => {
         const images = document.querySelectorAll(".research-images img");
-        const fullscreenView = document.querySelectorAll(".fullscreen");
-        const fullscreenImg = document.querySelectorAll(".fullscreen img");
+        const fullscreenView = document.querySelector(".fullscreen");  // 単一要素を取得
+        const fullscreenImg = document.querySelector(".fullscreen img");  // 単一要素を取得
     
+        // 画像クリック時
         images.forEach(img => {
-        img.addEventListener("click", () => {
-            fullscreenImg.src = img.src;  // クリックした画像のURLを設定
-            // 画像が設定された後、少し遅延させてactiveクラスを追加
-            setTimeout(() => {
-                fullscreenView.classList.add("active");
-            }, 10); // 10msの遅延でアニメーションを発火
-        });
-    });
+            img.addEventListener("click", () => {
+                fullscreenImg.src = img.src;  // クリックした画像のURLを設定
     
+                // 画像が設定された後、少し遅延させてactiveクラスを追加
+                setTimeout(() => {
+                    fullscreenView.classList.add("active");
+                }, 10); // 10msの遅延でアニメーションを発火
+            });
+        });
+    
+        // 全画面表示をクリックしたときに閉じる
         fullscreenView.addEventListener("click", () => {
             fullscreenView.classList.remove("active");
         });
