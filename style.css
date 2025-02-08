@@ -133,11 +133,11 @@ p {
     align-items: center; /* 垂直方向も中央揃え */
 }
 
-.research-images figure {
+.research-images .fullscreen figure {
     text-align: center; /* キャプションを中央揃え */
 }
 
-.research-images img {
+.research-images .fullscreen img {
     max-width: 100%; /* 画像の最大幅を調整 */ 
     height: auto; /* アスペクト比を維持 */
     border: 1px solid #ddd; /* 画像に枠線を追加 */
@@ -146,7 +146,7 @@ p {
     cursor: pointer;
 }
 
-.fullscreen {
+.research-images .fullscreen {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -161,14 +161,14 @@ p {
             transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
 }
 
-.fullscreen img {
+.research-images .fullscreen img {
     max-width: 90vw;
     max-height: 90vh;
     border: none;
     box-shadow: none;
 }
 
-.fullscreen.active {
+.research-images .fullscreen.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
