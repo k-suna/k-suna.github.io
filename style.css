@@ -127,48 +127,48 @@ p {
 
 .research-images {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2列のグリッド */
-    gap: 5px; /* アイテム間の間隔 */
-    justify-items: center; /* 中央揃え */
-    align-items: center; /* 垂直方向も中央揃え */
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
 
-.research-images .fullscreen figure {
-    text-align: center; /* キャプションを中央揃え */
+.research-images figure {
+    text-align: center;
 }
 
-.research-images .fullscreen img {
-    max-width: 100%; /* 画像の最大幅を調整 */ 
-    height: auto; /* アスペクト比を維持 */
-    border: 1px solid #ddd; /* 画像に枠線を追加 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加（オプション） */
+.research-images img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease-in-out, opacity 0.3s;
     cursor: pointer;
 }
 
-.research-images .fullscreen {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
+.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
 }
 
-.research-images .fullscreen img {
+.fullscreen img {
     max-width: 90vw;
     max-height: 90vh;
     border: none;
     box-shadow: none;
 }
 
-.research-images .fullscreen.active {
+.fullscreen.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
