@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const images = document.querySelectorAll(".research-images img");
         const fullscreenView = document.getElementById("fullscreen-view");
         const fullscreenImg = document.getElementById("fullscreen-img");
-
+    
         images.forEach(img => {
             img.addEventListener("click", () => {
                 fullscreenImg.src = img.src;
                 fullscreenView.classList.add("active");
             });
         });
-
+    
         fullscreenView.addEventListener("click", () => {
             fullscreenView.classList.remove("active");
         });
