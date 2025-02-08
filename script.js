@@ -29,11 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const fullscreenImg = document.getElementById("fullscreen-img");
     
         images.forEach(img => {
-            img.addEventListener("click", () => {
-                fullscreenImg.src = img.src;
+        img.addEventListener("click", () => {
+            fullscreenImg.src = img.src;  // クリックした画像のURLを設定
+            // 画像が設定された後、少し遅延させてactiveクラスを追加
+            setTimeout(() => {
                 fullscreenView.classList.add("active");
-            });
+            }, 10); // 10msの遅延でアニメーションを発火
         });
+    });
     
         fullscreenView.addEventListener("click", () => {
             fullscreenView.classList.remove("active");
