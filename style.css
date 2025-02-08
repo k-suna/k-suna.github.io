@@ -160,6 +160,7 @@ p {
     opacity: 0;
     z-index: 1000;
     transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
+    pointer-events: none;
 }
 
 .fullscreen img {
@@ -172,6 +173,7 @@ p {
 .fullscreen.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+    pointer-events: auto;
 }
 
 
