@@ -142,6 +142,35 @@ p {
     height: auto; /* アスペクト比を維持 */
     border: 1px solid #ddd; /* 画像に枠線を追加 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加（オプション） */
+    transition: transform 0.5s ease-in-out, opacity 0.3s;
+    cursor: pointer;
+}
+
+.fullscreen {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
+}
+
+.fullscreen img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border: none;
+    box-shadow: none;
+}
+
+.fullscreen.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
 
 
