@@ -286,7 +286,7 @@ body::after {
     }
 
     .career-image img {
-        order: -1; /* 画像を一番上に表示 */
+        order: 0; /* 画像を一番上に表示 */
         width: 100%; /* 画像の幅を親要素に合わせる */
         height: auto; /* アスペクト比を維持 */
         max-width: 300px; /* 最大幅を指定（必要に応じて調整） */
@@ -297,7 +297,7 @@ body::after {
         order: 1; /* career-textを2番目に表示 */
     }
 
-    .hobby {
+    .career-image hobby {
         text-align: left; /* 趣味・特技リストを左寄せ */
         order: 2; /* hobbyを3番目に表示 */
     }
