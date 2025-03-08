@@ -304,9 +304,9 @@ body::after {
        display: block; /* hobbyは表示 */
     }
 
-    .career-image .hobby {
+/*     .career-image .hobby {
         display: block; /* hobbyをcareer-imageの中で表示 */
-    }
+    } */
 
     .hobby li {
         margin-bottom: 8px; /* 各リストアイテムの間隔を調整 */
