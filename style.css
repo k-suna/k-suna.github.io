@@ -275,6 +275,7 @@ body::after {
     }
 
     .career-text, .career-image, .hobby  {
+        display: flex;
         max-width: 100%; /* 幅を100%にしてモバイルでも全体に合わせる */
         margin-left: 0; /* 左側の余白をリセット */
     }
