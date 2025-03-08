@@ -285,7 +285,7 @@ body::after {
         justify-content: flex-start;
     }
 
-    .career-image .img {
+    .career-image img {
         order: 0; /* 画像を一番上に表示 */
         width: 100%; /* 画像の幅を親要素に合わせる */
         height: auto; /* アスペクト比を維持 */
