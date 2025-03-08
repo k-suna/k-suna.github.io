@@ -283,6 +283,7 @@ body::after {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        order: 0; /* 画像を一番上に表示 */
     }
 
     .career-image img {
@@ -297,9 +298,14 @@ body::after {
         order: 1; /* career-textを2番目に表示 */
     }
 
-    .career-image .hobby {
+   .hobby {
         text-align: left; /* 趣味・特技リストを左寄せ */
         order: 2; /* hobbyを3番目に表示 */
+       display: block; /* hobbyは表示 */
+    }
+
+    .career-image .hobby {
+        display: block; /* hobbyをcareer-imageの中で表示 */
     }
 
     .hobby li {
