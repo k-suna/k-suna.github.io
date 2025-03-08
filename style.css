@@ -267,6 +267,31 @@ body::after {
         flex-wrap: wrap; /* リンクを折り返す */
     }
 
+    .career-content {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center; /* 中央揃えにする */
+        gap: 20px; /* 各要素の間隔を調整 */
+    }
+
+    .career-text, .career-image {
+        max-width: 100%; /* 幅を100%にしてモバイルでも全体に合わせる */
+        margin-left: 0; /* 左側の余白をリセット */
+    }
+
+    .career-image {
+        order: -1; /* 画像を一番上に表示 */
+    }
+
+    .career-image img {
+        width: 100%; /* 画像の幅を親要素に合わせる */
+        height: auto; /* アスペクト比を維持 */
+        max-width: 300px; /* 最大幅を指定（必要に応じて調整） */
+    }
+
+    .career-text {
+        text-align: center; /* テキストを中央に配置 */
+    }
+
     footer {
         font-size: 14px; /* フッターテキストを小さくする */
     }
