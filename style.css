@@ -294,10 +294,16 @@ body::after {
 
     .career-text {
         text-align: center; /* テキストを中央に配置 */
+        order: 1; /* career-textを2番目に表示 */
     }
 
     .hobby {
         text-align: left; /* 趣味・特技リストを左寄せ */
+        order: 2; /* hobbyを3番目に表示 */
+    }
+
+    .hobby li {
+        margin-bottom: 8px; /* 各リストアイテムの間隔を調整 */
     }
 
     footer {
