@@ -278,11 +278,8 @@ body::after {
         margin-left: 0; /* 左側の余白をリセット */
     }
 
-    .career-image {
-        order: -1; /* 画像を一番上に表示 */
-    }
-
     .career-image img {
+        order: -1; /* 画像を一番上に表示 */
         width: 100%; /* 画像の幅を親要素に合わせる */
         height: auto; /* アスペクト比を維持 */
         max-width: 300px; /* 最大幅を指定（必要に応じて調整） */
