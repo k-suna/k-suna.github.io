@@ -286,7 +286,7 @@ body::after {
     }
 
     .career-image img {
-/*         order: -1; /* 画像を一番上に表示 */ */
+        order: -1; /* 画像を一番上に表示 */
         width: 100%; /* 画像の幅を親要素に合わせる */
         height: auto; /* アスペクト比を維持 */
         max-width: 300px; /* 最大幅を指定（必要に応じて調整） */
